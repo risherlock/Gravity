@@ -1,0 +1,200 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+
+\title{On the Deflection of a Light Ray from its Rectilinear Motion}
+\author{Johann Georg von Soldner}
+\date{March 1801}
+
+\begin{document}
+\maketitle
+
+At the current, so much perfected state of practical astronomy, it becomes more necessary to develop from the theory (that is from the general properties and interactions of matter) all circumstances that can have an influence on a celestial body: to take advantage from a good observation, as much as it can give.
+
+Although it is true that we can become aware of considerable deviations from a taken rule by observation and by chance: as it was the case with the aberration of light. Yet deviations can exist which are so small, so that it is hard to decide whether they are true deviations or observational errors. Also deviations can exist, which are indeed considerable — but if they are combined with quantities whose determination is not completely finished, they can escape the notice of an experienced observer.
+
+Of the latter kind may also be the deflection of a light ray from the straight line, when it comes near to a celestial body, and therefore considerably experiences its attraction. Since we can easily see that this deflection is greatest when (as seen at the surface of the attracted body) the light ray arrives in horizontal direction, and becomes zero in perpendicular direction, then the magnitude of deflection will be a function of height. However, since also the ray-refraction is a function of height, then these two quantities must be mutually combined: therefore it might be possible, that the deflection would amount several seconds in its maximum, although it couldn't be determined by observations so far.
+
+— These are nearly the considerations, which drove me to still think about the perturbation of light rays, which as far as I know was not studied by anyone. —
+
+Before I start the investigation, I still want to give some general remarks, by which the calculation will be simplified. — Since at the beginning I only want to specify the maximum of such a deflection, I horizontally let pass the light at the location of observation (at the surface of the attracting body), or I assume that the star from which it comes, is apparently rising. — For convenience of the study we assume: the light ray doesn't arrive at the place of observation, but emanates from it. We can easily see, that this is completely irrelevant for the determination of the figure of the trajectory. — Furthermore if a light ray arrives at a point at the surface of the attracting body in horizontal direction, and then again continues its way (at the beginning horizontally again): then we can easily see, that with this continuation it describes the same curved line, which it has followed until here. If we draw through the place of observation and the center of the attracting body a straight line, then this line will be the major axis of the curved one for the trajectory of light; by describing over and under this line two fully congruent sides of the curved line. —
+
+
+C (Fig. 3) shall now be the center of the attracting body, $A$ is the location at its surface. From $A$, a light ray goes into the direction $AD$ or in the horizontal direction, by a velocity with which it traverses the way $v$ in a second. Yet the light ray, instead of traveling at the straight line $AD$, will be forced by the celestial body to describe a curved line $AMQ$, whose nature we will investigate. Upon this curved line after the time $\epsilon$ (calculated from the instant of emanation from $A$), the light ray is located in $M$, at the distance $CM = r$ from the center of the attracting body. $g$ be the gravitational acceleration at the surface of the body. Furthermore $CP = x$, $MP = y$ and the angle $MCP = \phi$. The force, by which the light in $M$ will be attracted by the body into the direction $MC$, will be $2gr^{-2}$. This force can be decomposed into two other forces,
+
+$$\frac{2g}{r^{2}} \cos \phi \textnormal{ and } \frac{2g}{r^{2}} \sin \phi \textnormal{,}$$
+
+into the directions $x$ and $y$; and for that we obtain the following two equations (s. Traité de mécanique céleste par Laplace, Tome I, pag. 21)
+
+\begin{equation}
+  \frac{ddx}{dt^{2}} = -\frac{2g}{r^{2}} \cos\phi
+\end{equation}
+\begin{equation}
+  \frac{ddy}{dt^{2}} = -\frac {2g}{r^{2}} \sin\phi
+\end{equation}
+
+If we multiply the first of these equations by $-\sin\phi$, the second one by $\cos\phi$, and sum them up, then we obtain:
+
+\begin{equation}
+  \frac{ddy\cos\phi -ddx\sin\phi}{dt^{2}} = 0
+\end{equation}
+
+% Now we multiply the first one by {\displaystyle \cos \phi }\cos \phi , the second one by {\displaystyle \sin \phi }{\displaystyle \sin \phi } and and sum them together, then we obtain:
+
+% {\displaystyle {\frac {ddx\ \cos \phi +ddy\ \sin \phi }{dt^{2}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddx\ \cos \phi +ddy\ \sin \phi }{dt^{2}}}=-{\frac {2g}{r^{2}}}}	(IV)
+% To reduce in these equations the number of variable quantities, we want to express x and y by r and {\displaystyle \phi }\phi. We easily see that
+
+% {\displaystyle x=r\ \cos \phi }{\displaystyle x=r\ \cos \phi } and {\displaystyle y=r\ \sin \phi }{\displaystyle y=r\ \sin \phi }.
+% If we differentiate, then we will obtain:
+
+% {\displaystyle dx=\cos \phi \ dr-r\sin \phi \ d\phi }{\displaystyle dx=\cos \phi \ dr-r\sin \phi \ d\phi } , und {\displaystyle dy=\sin \phi \ dr+r\cos \phi \ d\phi }{\displaystyle dy=\sin \phi \ dr+r\cos \phi \ d\phi }.
+% And if we differentiate again,
+
+% {\displaystyle ddx=\cos \phi \ ddr-2\sin \phi \ d\phi \ dr-r\ \sin \phi \ dd\phi -r\ \cos \phi \ d\phi ^{2}}{\displaystyle ddx=\cos \phi \ ddr-2\sin \phi \ d\phi \ dr-r\ \sin \phi \ dd\phi -r\ \cos \phi \ d\phi ^{2}},
+% and
+
+% {\displaystyle ddy=\sin \phi \ ddr+2\cos \phi \ d\phi \ dr+r\ \cos \phi \ dd\phi -r\ \sin \phi \ d\phi ^{2}}{\displaystyle ddy=\sin \phi \ ddr+2\cos \phi \ d\phi \ dr+r\ \cos \phi \ dd\phi -r\ \sin \phi \ d\phi ^{2}},
+% If we substitute these values for ddx and ddy in the previous equations, the we obtain from (III):
+
+% {\displaystyle {\frac {ddy\ \cos \phi -ddx\ \sin \phi }{dt^{2}}}={\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}}{\displaystyle {\frac {ddy\ \cos \phi -ddx\ \sin \phi }{dt^{2}}}={\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}}.
+% Thus we have
+
+% {\displaystyle {\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}=0}{\displaystyle {\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}=0}	(V)
+% And furthermore by (IV),
+
+% {\displaystyle {\frac {ddr-r\ d\phi ^{2}}{dt^{2}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddr-r\ d\phi ^{2}}{dt^{2}}}=-{\frac {2g}{r^{2}}}}	(VI)
+% To make equation (V) a true differential quantity, we multiply it by rdt, thus:
+
+% {\displaystyle {\frac {2r\ d\phi \ dr+r^{2}\ dd\phi }{dt}}=0}{\displaystyle {\frac {2r\ d\phi \ dr+r^{2}\ dd\phi }{dt}}=0},
+% and if we again integrate, we will obtain:
+
+% {\displaystyle r^{2}d\phi =C\ dt}{\displaystyle r^{2}d\phi =C\ dt},
+% where C is an arbitrary constant magnitude. To specify C, we note that {\displaystyle r^{2}d\phi (=r\ rd\phi )}{\displaystyle r^{2}d\phi (=r\ rd\phi )} is equal to: the double area of the small triangle which described the radius vector r in the time dt. The double area of the triangle that is described in the first second of time, is however: = AC · v; thus we have C = AC · v. And if we assume the radius AC of the attracting body as unity, what we will always do in the following, then C = v. If we substitute this value for C into the previous equations, then:
+
+% {\displaystyle r^{2}\ d\phi =v\ dt}{\displaystyle r^{2}\ d\phi =v\ dt},
+
+% Thus we have
+
+% {\displaystyle d\phi ={\frac {v\ dt}{r^{2}}}}{\displaystyle d\phi ={\frac {v\ dt}{r^{2}}}}	VII
+% If this value for {\displaystyle d\phi }{\displaystyle d\phi } is substituted into equations (VI), we obtain:
+
+% {\displaystyle {\frac {ddr}{dt^{2}}}-{\frac {v^{2}}{r^{3}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddr}{dt^{2}}}-{\frac {v^{2}}{r^{3}}}=-{\frac {2g}{r^{2}}}}.
+
+% If we multiply this equations by 2dr, then:
+
+% {\displaystyle {\frac {2dr\ ddr}{dt^{2}}}-{\frac {2v^{2}\ dr}{r^{3}}}=-{\frac {4g\ dr}{r^{2}}}}{\displaystyle {\frac {2dr\ ddr}{dt^{2}}}-{\frac {2v^{2}\ dr}{r^{3}}}=-{\frac {4g\ dr}{r^{2}}}},
+
+% and if we integrate again,
+
+% {\displaystyle {\frac {dr^{2}}{dt^{2}}}+{\frac {v^{2}}{r^{2}}}={\frac {4g}{r}}+D}{\displaystyle {\frac {dr^{2}}{dt^{2}}}+{\frac {v^{2}}{r^{2}}}={\frac {4g}{r}}+D},
+
+% where D is a constant magnitude, that depends on the constant magnitudes which are contained in the equation. From this equation that is found now, the time can be eliminated, hence:
+
+% {\displaystyle dt={\frac {dr}{\sqrt {D+{\frac {4g}{r}}-{\frac {v^{2}}{r}}}}}}{\displaystyle dt={\frac {dr}{\sqrt {D+{\frac {4g}{r}}-{\frac {v^{2}}{r}}}}}},
+
+% If we substitute this value for dt into equation (VII), then we obtain:
+
+% {\displaystyle d\phi ={\frac {v\ dr}{r^{2}{\sqrt {D+{\frac {4g}{r}}-{\frac {v^{2}}{r^{2}}}}}}}}{\displaystyle d\phi ={\frac {v\ dr}{r^{2}{\sqrt {D+{\frac {4g}{r}}-{\frac {v^{2}}{r^{2}}}}}}}},
+
+% To integrate this equations, we bring it into the form:
+
+% {\displaystyle d\phi ={\frac {v\ dr}{r^{2}{\sqrt {D+{\frac {4g^{2}}{v^{2}}}-\left({\frac {v}{r}}-{\frac {2g}{v}}\right)^{2}}}}}}{\displaystyle d\phi ={\frac {v\ dr}{r^{2}{\sqrt {D+{\frac {4g^{2}}{v^{2}}}-\left({\frac {v}{r}}-{\frac {2g}{v}}\right)^{2}}}}}},
+
+% Now we put
+
+% {\displaystyle {\frac {v}{r}}-{\frac {2g}{v}}=z}{\displaystyle {\frac {v}{r}}-{\frac {2g}{v}}=z},
+
+% then we have
+
+% {\displaystyle {\frac {v\ dr}{r^{2}}}=-dz}{\displaystyle {\frac {v\ dr}{r^{2}}}=-dz}.
+
+% If this and z is substituted into the equation for {\displaystyle d\phi }{\displaystyle d\phi }, the we will have:
+% {\displaystyle d\phi ={\frac {dz}{\sqrt {D+{\frac {4g^{2}}{v^{2}}}-z^{2}}}}}{\displaystyle d\phi ={\frac {dz}{\sqrt {D+{\frac {4g^{2}}{v^{2}}}-z^{2}}}}},
+% From that the integral is now:
+
+% {\displaystyle \phi =\operatorname {Arc\cos } {\frac {z}{\sqrt {D+{\frac {4g}{v^{2}}}}}}+\ \alpha }{\displaystyle \phi =\operatorname {Arc\cos } {\frac {z}{\sqrt {D+{\frac {4g}{v^{2}}}}}}+\ \alpha },
+% where {\displaystyle \alpha }\alpha is a constant magnitude. By well-known properties it is furthermore:
+
+% {\displaystyle \cos(\phi -\alpha )={\frac {z}{\sqrt {D+{\frac {4g}{v^{2}}}}}}}{\displaystyle \cos(\phi -\alpha )={\frac {z}{\sqrt {D+{\frac {4g}{v^{2}}}}}}},
+% and if we also substitute instead of z its value:
+
+% {\displaystyle \cos(\phi -\alpha )={\frac {v^{2}-2gr}{r{\sqrt {v^{2}D+4g^{2}}}}}}{\displaystyle \cos(\phi -\alpha )={\frac {v^{2}-2gr}{r{\sqrt {v^{2}D+4g^{2}}}}}}.
+% {\displaystyle \phi -\alpha }{\displaystyle \phi -\alpha } would be the angle that r forms with the major axis of the curved line that has to be specified. Since furthermore {\displaystyle \phi }\phi is the angle which r forms with the line AF (the axis of the coordinates x and y), then {\displaystyle \alpha }\alpha must be the angle that forms the major axis with the line AF. However, since AF goes through the observation place and the center of the attracting body, then by the preceding, AF must be the major axis; also {\displaystyle \alpha }\alpha = 0, and thus:
+
+% {\displaystyle \cos \phi ={\frac {v^{2}-2gr}{r{\sqrt {v^{2}D+4g^{2}}}}}}{\displaystyle \cos \phi ={\frac {v^{2}-2gr}{r{\sqrt {v^{2}D+4g^{2}}}}}}.
+% For {\displaystyle \phi }\phi = 0 it must be r = AC = 1, and we obtain from this equation:
+
+% {\displaystyle {\sqrt {v^{2}D+4g^{2}}}=v^{2}-2g}{\displaystyle {\sqrt {v^{2}D+4g^{2}}}=v^{2}-2g}.
+% If we substitute this in the previous equation, then the still unknown D and also the square-root sign vanish; and we obtain:
+
+% {\displaystyle \cos \phi ={\frac {v^{2}-2gr}{r(v^{2}-2g)}}}{\displaystyle \cos \phi ={\frac {v^{2}-2gr}{r(v^{2}-2g)}}};
+% and furthermore by that
+
+% {\displaystyle r+\left[{\frac {v^{2}-2g}{2g}}\right]r\ \cos \phi ={\frac {v^{2}}{2g}}}{\displaystyle r+\left[{\frac {v^{2}-2g}{2g}}\right]r\ \cos \phi ={\frac {v^{2}}{2g}}}.	(VIII)
+% From this finite equation between r and {\displaystyle \phi }\phi, the curved line can be specified. To achieve this more conveniently, we again want to reduce the equation to coordinates. Let (Fig. 3) AP = x and MP = y, then we have:
+
+% {\displaystyle {\begin{array}{ll}&x=1-r\cos \phi \\&y=r\sin \phi \\\mathrm {and} &r={\sqrt {\left(1-x\right)^{2}+y^{2}}}\end{array}}}{\displaystyle {\begin{array}{ll}&x=1-r\cos \phi \\&y=r\sin \phi \\\mathrm {and} &r={\sqrt {\left(1-x\right)^{2}+y^{2}}}\end{array}}}
+% If we substitute this into equation (VIII), then we find:
+
+% {\displaystyle y^{2}={\frac {v^{2}(v^{2}-4g)}{4g^{2}}}[1-x]^{2}-{\frac {v^{2}(v^{2}-2g)}{2g^{2}}}[1-x]+{\frac {v^{2}}{4g^{2}}}}{\displaystyle y^{2}={\frac {v^{2}(v^{2}-4g)}{4g^{2}}}[1-x]^{2}-{\frac {v^{2}(v^{2}-2g)}{2g^{2}}}[1-x]+{\frac {v^{2}}{4g^{2}}}},
+% and if we properly develop everything,
+
+% {\displaystyle y^{2}={\frac {v^{2}}{g}}x+{\frac {v^{2}(v^{2}-4g)}{4g^{2}}}x^{2}}{\displaystyle y^{2}={\frac {v^{2}}{g}}x+{\frac {v^{2}(v^{2}-4g)}{4g^{2}}}x^{2}}	(IX)
+% Since this equation is of second degree, then the curved line is a conic section, that can be studied more closely now.
+
+% If p is the parameter and a the semi-major axis, then (if we calculate the abscissa with its start at the vertex) the general equation for all conic sections is:
+
+% {\displaystyle y^{2}=px+{\frac {p}{2a}}x^{2}}{\displaystyle y^{2}=px+{\frac {p}{2a}}x^{2}}.
+% This equation contains the properties of the parabola, when the coefficient of x² is zero; that of the ellipse when it is negative; and that of the hyperbola when it is positive. The latter is evidently the case in our equation (IX). Since for all our known celestial bodies 4g is smaller than v², then the coefficient of x² must be positive.
+
+% If thus a light ray passes a celestial body, then it will be forced by the attraction of the body to describe a hyperbola whose concave side is directed against the attracting body, instead of progressing in a straight direction.
+% The conditions, under which the light ray would describe another conic section, can now easily be specified. It would describe a parabola when 4g = v², an ellipse when 4g were greater than v², and a circle when 2g = v². Since we don't know any celestial body whose mass is so great that it can generate such an acceleration at its surface, then the light ray always describes a hyperbola in our known world.
+
+% Now, it only remains to investigate, to what extend the light ray will be deflected from its straight line; or how great is the perturbation angle (which is the way I want to call it).
+
+% Since the figure of the trajectory is now specified, we can consider the light ray again as arriving. And because I at first want to specify only the maximum of the perturbation angle, I assume that the light ray comes from an infinitely great distance. — The maximum must take place in this case, because the attracting body longer acts on the light ray when it comes from a greater than from a smaller distance. — If the light ray comes from an infinite distance, then its initial direction is that of the asymptote BR (Fig. 3.) of the hyperbola, because in an infinitely great distant the asymptote falls into the tangent. Yet the light ray comes into the eye of the observer in the direction DA, thus ADB will be the perturbation angle. If we call this angle {\displaystyle \omega }\omega, then we have, since the triangle ABD at A is right-angled:
+
+% {\displaystyle \operatorname {tang} \ \omega ={\frac {AB}{AD}}}{\displaystyle \operatorname {tang} \ \omega ={\frac {AB}{AD}}}.
+% However, it is known from the nature of the hyperbola, that AB is the semi-major axis, and AD the semi-lateral axis. Thus this magnitudes must also be specified. When a is the semi-major axis, and b the semi-lateral axis, then the parameter is:
+
+% {\displaystyle p={\frac {2b^{2}}{a}}}{\displaystyle p={\frac {2b^{2}}{a}}}.
+% If we substitute this value into the general equation of hyperbola
+% {\displaystyle y^{2}=px+{\frac {p}{2a}}x^{2}}{\displaystyle y^{2}=px+{\frac {p}{2a}}x^{2}},
+% then it transforms into:
+
+% {\displaystyle y^{2}={\frac {2b^{2}}{a}}x+{\frac {b^{2}}{a^{2}}}x^{2}}{\displaystyle y^{2}={\frac {2b^{2}}{a}}x+{\frac {b^{2}}{a^{2}}}x^{2}}.
+% If we compare this coefficients of x and x² with those in (IX), then we obtain the semi-major axis
+
+% {\displaystyle a={\frac {2g}{v^{2}-4g}}=AB}{\displaystyle a={\frac {2g}{v^{2}-4g}}=AB},
+% and the semi-lateral axis
+
+% {\displaystyle b={\frac {v}{\sqrt {v^{2}-4g}}}=AD}{\displaystyle b={\frac {v}{\sqrt {v^{2}-4g}}}=AD}.
+% If we substitute this values for AB and AD into the expression for {\displaystyle \operatorname {tang} \ \omega }{\displaystyle \operatorname {tang} \ \omega }, then we have:
+
+% {\displaystyle \operatorname {tang} \ \omega ={\frac {2g}{v{\sqrt {v^{2}-4g}}}}}{\displaystyle \operatorname {tang} \ \omega ={\frac {2g}{v{\sqrt {v^{2}-4g}}}}}.
+% We now want to give an application of this formula on earth, and investigate, to what extend a light ray is deflected from its straight line, when it passes by at the surface of earth.
+
+% Under the presupposition, that light requires 564",8 decimal seconds of time to come from the sun to earth, we find that it traverses 15,562085 earth radii in a decimal second. Thus v = 15,562085. If we take under the geographical latitude its square of the sine ⅓ (that corresponds to a latitude of 35° 16'), the earth radius by 6369514 meters, and the acceleration of gravity by 3,66394 meters (s. Traité de mécanique céleste par Laplace, Tome I, pag. 118): then, expressed in earth radii, g = 0,000000575231. — I use this arrangement, to take the most recent and most reliable specifications of the size of earth's radius and the acceleration of gravity, without specific reduction from the Traité de mécanique céleste. By that, nothing will be changed in the final result, because it is only about the relation of the velocity of light to the velocity of a falling body on earth. The earth radius and the acceleration of gravity must therefore taken under the mentioned degree of latitude, since the earth spheroid (regarding its physical content) is equal to a sphere which has earth's radius (or 6369514 meters) as its radius. —
+
+% If we substitute these values for v and g into the equation of {\displaystyle \operatorname {tang} \ \omega }{\displaystyle \operatorname {tang} \ \omega }, then we obtain (in sexagesimal seconds) {\displaystyle \omega }\omega = 0",0009798, or in even number, {\displaystyle \omega }\omega = 0",001. Since this maximum is totally insignificant, it would be superfluous to go further; or to specify how this value decreases with the height above the horizon; and by what value it decreases, when the distance of the star from which the light ray comes, is assumed as finite and equal to a certain size. A specification that would bear no difficulty.
+
+% If we want to investigate by the given formula, to what extend a light ray is deflected by the moon when it passes the moon and travels to earth, then we must (after the relevant magnitudes are substituted and the radius of the moon is taken as unity) double the value that was found by the formula; because the light ray that passes the moon and falls upon earth, describes two arms of the hyperbola. But nevertheless the maximum must still be much smaller than that of earth; because the mass of the moon, and thus g, is much smaller. — The inflexion must therefore only stem from cohesion, scattering of light, and the atmosphere of the moon; the general attraction doesn't contribute anything significant. —
+
+% If we substitute into the formula for {\displaystyle \operatorname {tang} \ \omega }{\displaystyle \operatorname {tang} \ \omega } the acceleration of gravity on the surface of the sun, and assume the radius of this body as unity, then we find {\displaystyle \omega }\omega = 0".84. If it were possible to observe the fixed stars very nearly at the sun, then we would have to take this into consideration. However, as it is well known that this doesn't happen, then also the perturbation of the sun shall be neglected. For light rays that come from Venus (which was observed by Vidal only two minutes from the border of the sun, s. Hr. O. L. v. Zachs monatliche Correspondenz etc. II. Band pag 87.) it amounts much less; because we cannot assume the distances of Venus and Earth from the sun as infinitely great.
+
+% By combination of several bodies, that might be encountered by the light ray on its way, the results would be somewhat greater; but certainly always imperceptible for our observations.
+
+% Thus it is proven: that it is not necessary, at least at the current state of practical astronomy, to consider the perturbation of light rays by attracting celestial bodies.
+% Now I must anticipate several objections, that possibly could raised against me.
+
+% One will notice, that I departed from the ordinary method, because I specified several general properties of curved lines before the calculation; which is what usually happens only after, and which might also could have happened at this place. Yet the calculation was very shortened by that, and why should we calculate, when that what has to be proven, can be shown much more evident by a little reasoning?
+
+% Hopefully no one finds it problematic, that I treat a light ray almost as a ponderable body. That light rays possess all absolute properties of matter, can be seen at the phenomenon of aberration, which is only possible when light rays are really material. — And furthermore, we cannot think of things that exist and act on our senses, without having the properties of matter. —
+
+% nihil est quod possis dicere ab omni
+% corpore seiunctum secretumque esse ab inani,
+% quod quasi tertia sit numero natura reperta.
+% Lucretius de nat. rer. I, 431
+
+% Furthermore I don't think that it is necessary for me to apologize, that I published this investigation; since the result leads to the imperceptibility of all perturbations. Because it also must be even nearly as important for us to know what exists according to the theory, but which has no perceptible influence in practice; as it concerns us, what has a real influence in respect to practice. Our knowledge will be equally extended by both. For example, we prove that the diurnal aberration, the disturbance of the rotation of earth, and other such things in addition, — are imperceptibly small.
+
+\end{document}
