@@ -21,7 +21,9 @@ Before I start the investigation, I still want to give some general remarks, by 
 
 C (Fig. 3) shall now be the center of the attracting body, $A$ is the location at its surface. From $A$, a light ray goes into the direction $AD$ or in the horizontal direction, by a velocity with which it traverses the way $v$ in a second. Yet the light ray, instead of traveling at the straight line $AD$, will be forced by the celestial body to describe a curved line $AMQ$, whose nature we will investigate. Upon this curved line after the time $\epsilon$ (calculated from the instant of emanation from $A$), the light ray is located in $M$, at the distance $CM = r$ from the center of the attracting body. $g$ be the gravitational acceleration at the surface of the body. Furthermore $CP = x$, $MP = y$ and the angle $MCP = \phi$. The force, by which the light in $M$ will be attracted by the body into the direction $MC$, will be $2gr^{-2}$. This force can be decomposed into two other forces,
 
-$$\frac{2g}{r^{2}} \cos \phi \textnormal{ and } \frac{2g}{r^{2}} \sin \phi \textnormal{,}$$
+$$
+  \frac{2g}{r^{2}} \cos \phi \textnormal{ and } \frac{2g}{r^{2}} \sin\phi ,
+$$
 
 into the directions $x$ and $y$; and for that we obtain the following two equations (s. Traité de mécanique céleste par Laplace, Tome I, pag. 21)
 
@@ -35,51 +37,82 @@ into the directions $x$ and $y$; and for that we obtain the following two equati
 If we multiply the first of these equations by $-\sin\phi$, the second one by $\cos\phi$, and sum them up, then we obtain:
 
 \begin{equation}
-  \frac{ddy\cos\phi -ddx\sin\phi}{dt^{2}} = 0
+  \frac{ddy\cos\phi - ddx\sin\phi}{dt^{2}} = 0
 \end{equation}
 
-% Now we multiply the first one by {\displaystyle \cos \phi }\cos \phi , the second one by {\displaystyle \sin \phi }{\displaystyle \sin \phi } and and sum them together, then we obtain:
+Now we multiply the first one by $\cos\phi$ , the second one by $\sin\phi$ and sum them together, then we obtain:
 
-% {\displaystyle {\frac {ddx\ \cos \phi +ddy\ \sin \phi }{dt^{2}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddx\ \cos \phi +ddy\ \sin \phi }{dt^{2}}}=-{\frac {2g}{r^{2}}}}	(IV)
-% To reduce in these equations the number of variable quantities, we want to express x and y by r and {\displaystyle \phi }\phi. We easily see that
+\begin{equation}
+  \frac{ddx\cos\phi + ddy\sin\phi }{dt^{2}}=-\frac{2g}{r^{2}}
+\end{equation}
 
-% {\displaystyle x=r\ \cos \phi }{\displaystyle x=r\ \cos \phi } and {\displaystyle y=r\ \sin \phi }{\displaystyle y=r\ \sin \phi }.
-% If we differentiate, then we will obtain:
+To reduce in these equations the number of variable quantities, we want to express $x$ and $y$ by $r$ and $\phi$. We easily see that
 
-% {\displaystyle dx=\cos \phi \ dr-r\sin \phi \ d\phi }{\displaystyle dx=\cos \phi \ dr-r\sin \phi \ d\phi } , und {\displaystyle dy=\sin \phi \ dr+r\cos \phi \ d\phi }{\displaystyle dy=\sin \phi \ dr+r\cos \phi \ d\phi }.
-% And if we differentiate again,
+$$
+  x = r \cos\phi \textnormal{ and } y = r \sin\phi \textnormal{.}
+$$
 
-% {\displaystyle ddx=\cos \phi \ ddr-2\sin \phi \ d\phi \ dr-r\ \sin \phi \ dd\phi -r\ \cos \phi \ d\phi ^{2}}{\displaystyle ddx=\cos \phi \ ddr-2\sin \phi \ d\phi \ dr-r\ \sin \phi \ dd\phi -r\ \cos \phi \ d\phi ^{2}},
-% and
+And if we differentiate again,
 
-% {\displaystyle ddy=\sin \phi \ ddr+2\cos \phi \ d\phi \ dr+r\ \cos \phi \ dd\phi -r\ \sin \phi \ d\phi ^{2}}{\displaystyle ddy=\sin \phi \ ddr+2\cos \phi \ d\phi \ dr+r\ \cos \phi \ dd\phi -r\ \sin \phi \ d\phi ^{2}},
-% If we substitute these values for ddx and ddy in the previous equations, the we obtain from (III):
+$$
+  ddx = \cos\phi\ ddr - 2\sin\phi\ d\phi\ dr - r\sin\phi\ dd\phi -r \cos\phi\ d\phi^{2},
+$$
 
-% {\displaystyle {\frac {ddy\ \cos \phi -ddx\ \sin \phi }{dt^{2}}}={\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}}{\displaystyle {\frac {ddy\ \cos \phi -ddx\ \sin \phi }{dt^{2}}}={\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}}.
-% Thus we have
+and
 
-% {\displaystyle {\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}=0}{\displaystyle {\frac {2d\phi \ dr+r\ dd\phi }{dt^{2}}}=0}	(V)
-% And furthermore by (IV),
+$$
+  ddy = \sin\phi\ ddr + 2\cos\phi\ d\phi\ dr + r\cos\phi\ dd\phi - r\sin\phi\ d\phi ^{2} ,
+$$
 
-% {\displaystyle {\frac {ddr-r\ d\phi ^{2}}{dt^{2}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddr-r\ d\phi ^{2}}{dt^{2}}}=-{\frac {2g}{r^{2}}}}	(VI)
-% To make equation (V) a true differential quantity, we multiply it by rdt, thus:
+If we substitute these values for ddx and ddy in the previous equations, the we obtain from (III):
 
-% {\displaystyle {\frac {2r\ d\phi \ dr+r^{2}\ dd\phi }{dt}}=0}{\displaystyle {\frac {2r\ d\phi \ dr+r^{2}\ dd\phi }{dt}}=0},
-% and if we again integrate, we will obtain:
+$$
+  \frac{ddy\cos\phi - ddx\sin\phi }{dt^{2}} = \frac{2d\phi\ dr + r\ dd\phi}{dt^{2}}
+$$
 
-% {\displaystyle r^{2}d\phi =C\ dt}{\displaystyle r^{2}d\phi =C\ dt},
-% where C is an arbitrary constant magnitude. To specify C, we note that {\displaystyle r^{2}d\phi (=r\ rd\phi )}{\displaystyle r^{2}d\phi (=r\ rd\phi )} is equal to: the double area of the small triangle which described the radius vector r in the time dt. The double area of the triangle that is described in the first second of time, is however: = AC · v; thus we have C = AC · v. And if we assume the radius AC of the attracting body as unity, what we will always do in the following, then C = v. If we substitute this value for C into the previous equations, then:
+Thus we have
 
-% {\displaystyle r^{2}\ d\phi =v\ dt}{\displaystyle r^{2}\ d\phi =v\ dt},
+\begin{equation}
+  \frac{2d\phi\ dr + r\ dd\phi }{dt^{2}}=0
+\end{equation}
 
-% Thus we have
+And furthermore by (IV),
 
-% {\displaystyle d\phi ={\frac {v\ dt}{r^{2}}}}{\displaystyle d\phi ={\frac {v\ dt}{r^{2}}}}	VII
-% If this value for {\displaystyle d\phi }{\displaystyle d\phi } is substituted into equations (VI), we obtain:
+\begin{equation}
+  \frac{ddr-r\ d\phi^{2}}{dt^{2}} = -{\frac{2g}{r^{2}}}
+\end{equation}
 
-% {\displaystyle {\frac {ddr}{dt^{2}}}-{\frac {v^{2}}{r^{3}}}=-{\frac {2g}{r^{2}}}}{\displaystyle {\frac {ddr}{dt^{2}}}-{\frac {v^{2}}{r^{3}}}=-{\frac {2g}{r^{2}}}}.
+To make equation (V) a true differential quantity, we multiply it by $rdt$, thus:
 
-% If we multiply this equations by 2dr, then:
+$$
+  \frac{2r\ d\phi\ dr + r^{2}\ dd\phi}{dt} = 0,
+$$
+
+and if we again integrate, we will obtain:
+
+$$
+  r^{2}d\phi =C\ dt,
+$$
+
+where $C$ is an arbitrary constant magnitude. To specify $C$, we note that $r^{2}d\phi (= r\ rd\phi)$ is equal to: the double area of the small triangle which described the radius vector $r$ in the time $dt$. The double area of the triangle that is described in the first second of time, is however: $= AC \times v$; thus we have $C = AC \times v$. And if we assume the radius $AC$ of the attracting body as unity, what we will always do in the following, then $C = v$. If we substitute this value for $C$ into the previous equations, then:
+
+$$
+  r^{2}\ d\phi =v\ dt,
+$$
+
+Thus we have
+
+\begin{equation}
+  d\phi = \frac{v\ dt}{r^{2}}
+\end{equation}
+
+If this value for $d\phi$ is substituted into equations (VI), we obtain:
+
+$$
+  \frac{ddr}{dt^{2}} - \frac{v^{2}}{r^{3}} = - \frac{2g}{r^{2}}.
+$$
+
+If we multiply this equations by $2dr$, then:
 
 % {\displaystyle {\frac {2dr\ ddr}{dt^{2}}}-{\frac {2v^{2}\ dr}{r^{3}}}=-{\frac {4g\ dr}{r^{2}}}}{\displaystyle {\frac {2dr\ ddr}{dt^{2}}}-{\frac {2v^{2}\ dr}{r^{3}}}=-{\frac {4g\ dr}{r^{2}}}},
 
